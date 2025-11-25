@@ -1,1 +1,82 @@
-sup
+
+    <!DOCTYPE html>
+    <html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fashion Store - Product Catalog</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                padding: 40px 20px;
+                min-height: 100vh;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            h1 {
+                text-align: center;
+                color: white;
+                font-size: 3em;
+                margin-bottom: 40px;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            }
+            .products-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 30px;
+            }
+            .product-card {
+                background: white;
+                border-radius: 15px;
+                padding: 30px;
+                text-align: center;
+                transition: transform 0.3s, box-shadow 0.3s;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            }
+            .product-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            }
+            .product-title {
+                font-size: 1.5em;
+                margin-bottom: 15px;
+                color: #333;
+            }
+            .view-btn {
+                display: inline-block;
+                padding: 12px 30px;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                text-decoration: none;
+                border-radius: 25px;
+                font-weight: 600;
+                transition: transform 0.3s;
+            }
+            .view-btn:hover {
+                transform: scale(1.05);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>🛍️ Fashion Store</h1>
+            <div class="products-grid">
+    
+                <div class="product-card">
+                    <h2 class="product-title">Vörös rövid nyári ruha</h2>
+                    <a href="download.html" class="view-btn">Megtekintés</a>
+                </div>
+        
+            </div>
+        </div>
+    </body>
+    </html>
+    
