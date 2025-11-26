@@ -2,253 +2,454 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibráló Vörös Szatén Mini Ruha - Fashion Store</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibráló Vörös Szatén Mini Ruha | Fashion Store</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            color: #f0f0f0;
-            min-height: 100vh;
-            padding: 20px;
-        }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      background: #111111;
+      color: #f5f5f5;
+      min-height: 100vh;
+      padding: 20px 0 40px;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-        }
+    .page {
+      max-width: 1120px;
+      margin: 40px auto;
+      padding: 0 24px 64px;
+      background: #151515;
+      border-radius: 20px;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+    }
 
-        .product-header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #444;
-        }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
 
-        .product-title {
-            font-size: 2.5em;
-            font-weight: 700;
-            margin-bottom: 10px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
+    .brand {
+      letter-spacing: 0.28em;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
 
-        .product-short-desc {
-            font-size: 1.2em;
-            color: #ccc;
-        }
+    nav a {
+      font-size: 13px;
+      text-decoration: none;
+      color: #aaaaaa;
+      margin-left: 20px;
+      white-space: nowrap;
+    }
 
-        .product-main {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
+    nav a:hover {
+      color: #ffffff;
+    }
 
-        @media (max-width: 768px) {
-            .product-main {
-                grid-template-columns: 1fr;
-            }
-        }
+    .product-layout {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 56px;
+      margin-top: 48px;
+    }
 
-        .video-section {
-            order: 2;
-        }
+    .video-section {
+      order: 2;
+    }
 
-        .info-section {
-            order: 1;
-        }
+    .info-section {
+      order: 1;
+      padding-top: 8px;
+    }
 
-        .video-container {
-            position: relative;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-        }
+    .media-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
 
-        video {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+    .video-container {
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #202020;
+      height: 520px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+    }
 
-        .info-card {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 30px;
-            border-radius: 15px;
-            height: 100%;
-        }
+    .video-container video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
-        .section-title {
-            font-size: 1.5em;
-            margin-bottom: 15px;
-            color: #667eea;
-        }
+    .video-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #777777;
+    }
 
-        .long-description {
-            margin-bottom: 25px;
-            font-size: 1.05em;
-            line-height: 1.8;
-        }
+    .product-category {
+      font-size: 11px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: #888888;
+      margin-bottom: 10px;
+    }
 
-        .attributes {
-            margin-bottom: 25px;
-        }
+    h1 {
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin: 0 0 12px;
+    }
 
-        .attribute-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #333;
-        }
+    .tagline {
+      font-size: 14px;
+      color: #b0b0b0;
+      margin-bottom: 22px;
+    }
 
-        .attribute-label {
-            font-weight: 600;
-            color: #aaa;
-        }
+    .price {
+      font-size: 18px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
 
-        .attribute-value {
-            font-weight: 500;
-            text-transform: capitalize;
-        }
+    .price span {
+      font-weight: 500;
+    }
 
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 25px;
-        }
+    .section-label {
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #888888;
+      margin-bottom: 8px;
+    }
 
-        .tag {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: 500;
-        }
+    .detail-block {
+      font-size: 13px;
+      line-height: 1.7;
+      color: #d0d0d0;
+      margin-bottom: 22px;
+    }
 
-        .price {
-            font-size: 2em;
-            font-weight: 700;
-            color: #667eea;
-            margin-bottom: 20px;
-        }
+    .detail-block ul {
+      padding-left: 16px;
+      margin: 8px 0 0;
+    }
 
-        .care-instructions {
-            background: rgba(102, 126, 234, 0.1);
-            padding: 15px;
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
-        }
+    .detail-block li {
+      margin-bottom: 4px;
+    }
 
-        .btn {
-            display: inline-block;
-            padding: 15px 40px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: 600;
-            font-size: 1.1em;
-            transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-        }
+    .attributes-list {
+      border-radius: 16px;
+      padding: 18px 18px 10px;
+      background: #181818;
+      border: 1px solid #292929;
+      margin-bottom: 22px;
+      font-size: 13px;
+    }
 
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
-        }
+    .attribute-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+    }
 
-        .action-buttons {
-            display: flex;
-            gap: 15px;
-            margin-top: 30px;
-        }
-    </style>
+    .attribute-label {
+      color: #aaaaaa;
+    }
+
+    .attribute-value {
+      font-weight: 500;
+      text-align: right;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .tag {
+      font-size: 11px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: #202020;
+      color: #d0d0d0;
+      border: 1px solid #333333;
+    }
+
+    .care-note {
+      font-size: 12px;
+      line-height: 1.7;
+      border-radius: 12px;
+      padding: 12px 14px;
+      border-left: 3px solid #111111;
+      background: #181818;
+      color: #d0d0d0;
+      margin-bottom: 24px;
+    }
+
+    .purchase-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 16px;
+      align-items: center;
+    }
+
+    .qty {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      border: 1px solid #dcdcdc;
+      padding: 6px 10px;
+      font-size: 13px;
+      background: #ffffff;
+      color: #111111;
+    }
+
+    .qty button {
+      border: none;
+      background: transparent;
+      font-size: 16px;
+      line-height: 1;
+      padding: 4px 6px;
+      cursor: pointer;
+    }
+
+    .qty span {
+      width: 24px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .primary-btn {
+      border: none;
+      border-radius: 999px;
+      padding: 13px 32px;
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      background: #111111;
+      color: #ffffff;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .primary-btn:active {
+      transform: translateY(1px);
+    }
+
+    .ship-note {
+      font-size: 12px;
+      color: #a0a0a0;
+      margin-bottom: 10px;
+    }
+
+    .model-note {
+      font-size: 12px;
+      color: #8a8a8a;
+      margin-top: 6px;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(0,0,0,0.06);
+      font-size: 11px;
+      color: #9a9a9a;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #9a9a9a;
+      margin-left: 18px;
+      font-size: 11px;
+    }
+
+    footer a:first-of-type {
+      margin-left: 0;
+    }
+
+    @media (max-width: 900px) {
+      .product-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .video-container {
+        height: 420px;
+      }
+
+      .page {
+        margin-top: 24px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      nav {
+        width: 100%;
+        display: flex;
+        gap: 16px;
+        overflow-x: auto;
+      }
+
+      .purchase-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .primary-btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: inline-flex;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="product-header">
-            <h1 class="product-title">Vibráló Vörös Szatén Mini Ruha</h1>
-            <p class="product-short-desc">Ez a casual mini ruha élénk vörös színben tökéletes választás, hogy kiemelje egyedi stílusát.</p>
+  <div class="page">
+    <header>
+      <div class="brand">FASHION HOUSE</div>
+      <nav>
+        <a href="#">Újdonságok</a>
+        <a href="#">Kollekciók</a>
+        <a href="#">Lookbook</a>
+        <a href="#">Story</a>
+      </nav>
+    </header>
+
+    <main class="product-layout">
+      <section class="video-section">
+        <div class="media-wrapper">
+          <div class="video-container">
+            <video controls autoplay loop muted>
+              <source src="./videos/bikini_video.mp4" type="video/mp4">
+              A böngésző nem támogatja a videólejátszást.
+            </video>
+            <div class="video-placeholder">
+              dress
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <div class="product-category">dress</div>
+        <h1>Vibráló Vörös Szatén Mini Ruha</h1>
+        <p class="tagline">Ez a casual mini ruha élénk vörös színben tökéletes választás, hogy kiemelje egyedi stílusát.</p>
+        <p class="price"><span>10,000 - 15,000 Ft</span></p>
+
+        <div class="detail-block">
+          <div class="section-label">Leírás</div>
+          <p>Ez a gyönyörű vörös szatén mini ruha rendszeres szabással készült, amely kényelmes viseletet biztosít. Casual stílusa ideális választás a mindennapi eseményekhez vagy baráti találkozókhoz. A szatén anyag eleganciát kölcsönöz, miközben a mini hossz kiemeli a lábakat.</p>
         </div>
 
-        <div class="product-main">
-            <div class="video-section">
-                <div class="video-container">
-                    <video controls autoplay loop muted>
-                        <source src="./videos/bikini_video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+        <div class="detail-block">
+          <div class="section-label">Részletek</div>
+          <div class="attributes-list">
+            <div class="attribute-row">
+              <span class="attribute-label">Hossz</span>
+              <span class="attribute-value">mini</span>
             </div>
-
-            <div class="info-section">
-                <div class="info-card">
-                    <h2 class="section-title">Termék részletei</h2>
-
-                    <p class="long-description">Ez a gyönyörű vörös szatén mini ruha rendszeres szabással készült, amely kényelmes viseletet biztosít. Casual stílusa ideális választás a mindennapi eseményekhez vagy baráti találkozókhoz. A szatén anyag eleganciát kölcsönöz, miközben a mini hossz kiemeli a lábakat.</p>
-
-                    <div class="attributes">
-                        <div class="attribute-row">
-                            <span class="attribute-label">Kategória:</span>
-                            <span class="attribute-value">dress</span>
-                        </div>
-                        <div class="attribute-row">
-                            <span class="attribute-label">Hossz:</span>
-                            <span class="attribute-value">mini</span>
-                        </div>
-                        <div class="attribute-row">
-                            <span class="attribute-label">Fazon:</span>
-                            <span class="attribute-value">regular</span>
-                        </div>
-                        <div class="attribute-row">
-                            <span class="attribute-label">Szín:</span>
-                            <span class="attribute-value">red</span>
-                        </div>
-                        <div class="attribute-row">
-                            <span class="attribute-label">Anyag:</span>
-                            <span class="attribute-value">satin</span>
-                        </div>
-                        <div class="attribute-row">
-                            <span class="attribute-label">Stílus:</span>
-                            <span class="attribute-value">casual</span>
-                        </div>
-                    </div>
-
-                    <div class="tags">
-                        <span class="tag">casual</span>
-                        <span class="tag">mini</span>
-                        <span class="tag">red</span>
-                    </div>
-
-                    <div class="price">10,000 - 15,000 Ft</div>
-
-                    <div class="care-instructions">
-                        <strong>Ápolási útmutató:</strong> Kémiai tisztítás ajánlott
-                    </div>
-
-                    <div class="action-buttons">
-                        <a href="#" class="btn">Kosárba</a>
-                    </div>
-                </div>
+            <div class="attribute-row">
+              <span class="attribute-label">Fazon</span>
+              <span class="attribute-value">regular</span>
             </div>
+            <div class="attribute-row">
+              <span class="attribute-label">Szín</span>
+              <span class="attribute-value">red</span>
+            </div>
+            <div class="attribute-row">
+              <span class="attribute-label">Anyag</span>
+              <span class="attribute-value">satin</span>
+            </div>
+            <div class="attribute-row">
+              <span class="attribute-label">Stílus</span>
+              <span class="attribute-value">casual</span>
+            </div>
+          </div>
         </div>
-    </div>
+
+        <div class="section-label">Címkék</div>
+        <div class="tags">
+          <span class="tag">casual</span>
+          <span class="tag">mini</span>
+          <span class="tag">red</span>
+        </div>
+
+        <div class="care-note">
+          <strong>Ápolás:</strong> Kémiai tisztítás ajánlott
+        </div>
+
+        <div class="purchase-row">
+          <div class="qty">
+            <button type="button" aria-label="Mennyiség csökkentése">−</button>
+            <span>1</span>
+            <button type="button" aria-label="Mennyiség növelése">+</button>
+          </div>
+          <button class="primary-btn" type="button">
+            Kosárba
+          </button>
+        </div>
+
+        <p class="ship-note">
+          Ingyenes szállítás 25 000 Ft felett. Részletek a pénztárnál.
+        </p>
+
+        <p class="model-note">
+          A modell paraméterei és mérete opcionálisan ide jöhetnek.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div>Fashion House Budapest</div>
+      <div>
+        <a href="#">Ápolási útmutató</a>
+        <a href="#">Szállítás</a>
+        <a href="#">Visszaküldés</a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
