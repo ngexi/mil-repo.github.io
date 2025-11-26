@@ -1,8 +1,8 @@
 {
-  "jacket": {
-    "prompt": "A full body shot of a model wearing a casual hip-length green cotton jacket, with the camera slowly pushing in from slightly below to capture the overall silhouette and relaxed style. The scene shifts to a close-up, focusing on the vibrant green color and textured fabric, before transitioning to a waist-up angle that gently pans left, highlighting the jacket's fit around the shoulders and its trendy, casual design.",
-    "reference_image": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/Processed/jacket.jpg",
-    "output_video": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/generated_videos/jacket_video.mp4",
+  "bluz": {
+    "prompt": "A full body shot of a model wearing a long, white satin shirt, with the camera slowly pushing in from slightly below to highlight the overall silhouette and movement of the garment. The scene transitions to a close-up of the fabric draping gracefully over the shoulder, capturing its texture and sheen, before gently panning left to reveal the shirt's regular fit and casual style.",
+    "reference_image": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/Processed/bluz.png",
+    "output_video": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/generated_videos/bluz_video.mp4",
     "status": "success"
   }
 }
