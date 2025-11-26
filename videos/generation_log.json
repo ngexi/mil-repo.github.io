@@ -1,0 +1,8 @@
+{
+  "polka": {
+    "prompt": "A full body shot captures a model in a stunning vintage red midi dress, with the camera slowly pushing in from slightly below to highlight the graceful silhouette and movement. The scene shifts to a close-up, focusing on the rich texture and vibrant color of the fabric, before transitioning to a waist-up view that gently pans down to reveal the flattering fit and distinctive vintage details of the dress.",
+    "reference_image": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/Processed/polka.png",
+    "output_video": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/generated_videos/polka_video.mp4",
+    "status": "success"
+  }
+}
