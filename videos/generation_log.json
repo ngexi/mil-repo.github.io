@@ -1,6 +1,6 @@
 {
   "bluz": {
-    "prompt": "A full body shot of a model wearing a long, white satin shirt, with the camera slowly pushing in from slightly below to highlight the overall silhouette and movement of the garment. The scene transitions to a close-up of the fabric draping gracefully over the shoulder, capturing its texture and sheen, before gently panning left to reveal the shirt's regular fit and casual style.",
+    "prompt": "A full body shot of a model wearing a loose, hip-length white satin shirt, with the camera slowly pushing in from slightly below to highlight the shirt's elegant silhouette and soft flow. The scene shifts to a close-up, where hands gently touch the fabric, showcasing its smooth texture and radiant sheen. Finally, the camera captures a waist-up view with a gentle pan left, focusing on the shirt's casual fit around the shoulders and neckline, embodying effortless style.",
     "reference_image": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/Processed/bluz.png",
     "output_video": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/generated_videos/bluz_video.mp4",
     "status": "success"
