@@ -1,8 +1,8 @@
 {
-  "fur": {
-    "prompt": "A full body shot captures a model wearing a short, brown fur jacket, with the camera slowly pushing in from slightly below to highlight the overall silhouette and fluid movement. The scene shifts to a close-up of the luxurious fur fabric, showcasing its rich texture and warm color, before seamlessly transitioning to a waist-up view, gently panning left to reveal the casual fit and stylish appeal in action.",
-    "reference_image": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/Processed/fur.png",
-    "output_video": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/generated_videos/fur_video.mp4",
+  "sweater": {
+    "prompt": "A full body shot captures a model in a casual beige satin cardigan, the camera slowly pushing in from slightly below to highlight the overall silhouette and movement of the garment. The focus shifts to a close-up, showcasing the rich texture and sheen of the fabric, before transitioning to a waist-up view with a gentle pan left, emphasizing the cardigan's regular fit and stylish color.",
+    "reference_image": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/Processed/sweater.png",
+    "output_video": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/generated_videos/sweater_video.mp4",
     "status": "success"
   }
 }
