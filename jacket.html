@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zöld pamut dzseki | Fashion Store</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      background: #f5f5f5;
+      color: #111111;
+      min-height: 100vh;
+      padding: 20px 0 40px;
+    }
+
+    .page {
+      max-width: 1120px;
+      margin: 40px auto;
+      padding: 0 24px 64px;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .brand {
+      letter-spacing: 0.28em;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      font-size: 13px;
+      text-decoration: none;
+      color: #555555;
+      margin-left: 20px;
+      white-space: nowrap;
+    }
+
+    nav a:hover {
+      color: #111111;
+    }
+
+    .product-layout {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 56px;
+      margin-top: 48px;
+    }
+
+    .video-section {
+      order: 2;
+    }
+
+    .info-section {
+      order: 1;
+      padding-top: 8px;
+    }
+
+    .media-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .video-container {
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #e6e6e6;
+      height: 520px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+    }
+
+    .video-container video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .video-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #777777;
+    }
+
+    .product-category {
+      font-size: 11px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: #999999;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin: 0 0 12px;
+    }
+
+    .tagline {
+      font-size: 14px;
+      color: #777777;
+      margin-bottom: 22px;
+    }
+
+    .price {
+      font-size: 18px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .price span {
+      font-weight: 500;
+    }
+
+    .section-label {
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #999999;
+      margin-bottom: 8px;
+    }
+
+    .detail-block {
+      font-size: 13px;
+      line-height: 1.7;
+      color: #555555;
+      margin-bottom: 22px;
+    }
+
+    .detail-block ul {
+      padding-left: 16px;
+      margin: 8px 0 0;
+    }
+
+    .detail-block li {
+      margin-bottom: 4px;
+    }
+
+    .attributes-list {
+      border-radius: 16px;
+      padding: 18px 18px 10px;
+      background: #fafafa;
+      border: 1px solid #e3e3e3;
+      margin-bottom: 22px;
+      font-size: 13px;
+    }
+
+    .attribute-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+    }
+
+    .attribute-label {
+      color: #777777;
+    }
+
+    .attribute-value {
+      font-weight: 500;
+      text-align: right;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .tag {
+      font-size: 11px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: #f2f2f2;
+      color: #555555;
+      border: 1px solid #e2e2e2;
+    }
+
+    .care-note {
+      font-size: 12px;
+      line-height: 1.7;
+      border-radius: 12px;
+      padding: 12px 14px;
+      border-left: 3px solid #111111;
+      background: #f5f5f5;
+      color: #555555;
+      margin-bottom: 24px;
+    }
+
+    .purchase-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 16px;
+      align-items: center;
+    }
+
+    .qty {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      border: 1px solid #dcdcdc;
+      padding: 6px 10px;
+      font-size: 13px;
+      background: #ffffff;
+      color: #111111;
+    }
+
+    .qty button {
+      border: none;
+      background: transparent;
+      font-size: 16px;
+      line-height: 1;
+      padding: 4px 6px;
+      cursor: pointer;
+    }
+
+    .qty span {
+      width: 24px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .primary-btn {
+      border: none;
+      border-radius: 999px;
+      padding: 13px 32px;
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      background: #111111;
+      color: #ffffff;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .primary-btn:active {
+      transform: translateY(1px);
+    }
+
+    .ship-note {
+      font-size: 12px;
+      color: #666666;
+      margin-bottom: 10px;
+    }
+
+    .model-note {
+      font-size: 12px;
+      color: #8a8a8a;
+      margin-top: 6px;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(0,0,0,0.06);
+      font-size: 11px;
+      color: #9a9a9a;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #9a9a9a;
+      margin-left: 18px;
+      font-size: 11px;
+    }
+
+    footer a:first-of-type {
+      margin-left: 0;
+    }
+
+    @media (max-width: 900px) {
+      .product-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .video-container {
+        height: 420px;
+      }
+
+      .page {
+        margin-top: 24px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      nav {
+        width: 100%;
+        display: flex;
+        gap: 16px;
+        overflow-x: auto;
+      }
+
+      .purchase-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .primary-btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: inline-flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand">FASHION HOUSE</div>
+      <nav>
+        <a href="#">Újdonságok</a>
+        <a href="#">Kollekciók</a>
+        <a href="#">Lookbook</a>
+        <a href="#">Story</a>
+      </nav>
+    </header>
+
+    <main class="product-layout">
+      <section class="video-section">
+        <div class="media-wrapper">
+          <div class="video-container">
+            <video controls autoplay loop muted>
+              <source src="./videos/jacket_video.mp4" type="video/mp4">
+              A böngésző nem támogatja a videólejátszást.
+            </video>
+            <div class="video-placeholder">
+              jacket
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <div class="product-category">jacket</div>
+        <h1>Zöld pamut dzseki</h1>
+        <p class="tagline">Ez a hip-hosszan szabott zöld pamut dzseki tökéletes választás a mindennapi viselethez.</p>
+        <p class="price"><span>15,000 Ft</span></p>
+
+        <div class="detail-block">
+          <div class="section-label">Leírás</div>
+          <p>Ez a klasszikus, hip-hosszan szabott zöld dzseki puha pamutból készült, amely kényelmes és légáteresztő. A szabása rendszeres, így ideális választás a hétköznapi öltözködéshez, vagy akár baráti összejövetelekhez is.</p>
+        </div>
+
+        <div class="detail-block">
+          <div class="section-label">Részletek</div>
+          <div class="attributes-list">
+            <div class="attribute-row">
+              <span class="attribute-label">Hossz</span>
+              <span class="attribute-value">hip-length</span>
+            </div>
+            <div class="attribute-row">
+              <span class="attribute-label">Fazon</span>
+              <span class="attribute-value">regular</span>
+            </div>
+            <div class="attribute-row">
+              <span class="attribute-label">Szín</span>
+              <span class="attribute-value">green</span>
+            </div>
+            <div class="attribute-row">
+              <span class="attribute-label">Anyag</span>
+              <span class="attribute-value">cotton</span>
+            </div>
+            <div class="attribute-row">
+              <span class="attribute-label">Stílus</span>
+              <span class="attribute-value">casual</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-label">Címkék</div>
+        <div class="tags">
+          <span class="tag">casual</span>
+          <span class="tag">everyday</span>
+          <span class="tag">green</span>
+        </div>
+
+        <div class="care-note">
+          <strong>Ápolás:</strong> Kémiai tisztítás ajánlott
+        </div>
+
+        <div class="purchase-row">
+          <div class="qty">
+            <button type="button" aria-label="Mennyiség csökkentése">−</button>
+            <span>1</span>
+            <button type="button" aria-label="Mennyiség növelése">+</button>
+          </div>
+          <button class="primary-btn" type="button">
+            Kosárba
+          </button>
+        </div>
+
+        <p class="ship-note">
+          Ingyenes szállítás 25 000 Ft felett. Részletek a pénztárnál.
+        </p>
+
+        <p class="model-note">
+          A modell paraméterei és mérete opcionálisan ide jöhetnek.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div>Fashion House Budapest</div>
+      <div>
+        <a href="#">Ápolási útmutató</a>
+        <a href="#">Szállítás</a>
+        <a href="#">Visszaküldés</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

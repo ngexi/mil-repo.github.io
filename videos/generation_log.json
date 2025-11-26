@@ -1,8 +1,8 @@
 {
-  "bikini": {
-    "prompt": "A full body shot of a casual mini dress in vibrant red satin, the camera slowly pushes in from slightly below to highlight the overall silhouette and graceful movement of the model. The scene shifts to a close-up, capturing the rich texture and shine of the fabric, before transitioning to a waist-up angle with a gentle pan left that emphasizes the dress's flattering fit and bold color on the model.",
-    "reference_image": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/Processed/bikini.jpg",
-    "output_video": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/generated_videos/bikini_video.mp4",
+  "jacket": {
+    "prompt": "A full body shot of a model wearing a casual hip-length green cotton jacket, with the camera slowly pushing in from slightly below to capture the overall silhouette and relaxed style. The scene shifts to a close-up, focusing on the vibrant green color and textured fabric, before transitioning to a waist-up angle that gently pans left, highlighting the jacket's fit around the shoulders and its trendy, casual design.",
+    "reference_image": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/Processed/jacket.jpg",
+    "output_video": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/generated_videos/jacket_video.mp4",
     "status": "success"
   }
 }
