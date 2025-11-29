@@ -1,8 +1,8 @@
 {
-  "Alig_hasznalt_ferfi_oltony__728922726698960": {
-    "prompt": "A full body shot of a model wearing a long, light gray satin jacket, with the camera slowly pushing in from slightly below to highlight the sleek silhouette and graceful movement. The scene shifts to a close-up, capturing the exquisite texture and sheen of the fabric, before transitioning to a waist-up view that gently pans down to reveal the regular fit and elegant details of this formal piece.",
-    "reference_image": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/Processed/Alig_hasznalt_ferfi_oltony__728922726698960.jpg",
-    "output_video": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/generated_videos/Alig_hasznalt_ferfi_oltony__728922726698960_video.mp4",
+  "o\u0308lto\u0308ny": {
+    "prompt": "A full body shot of a model wearing a long, slim-fit black and white satin jacket, with the camera slowly pushing in from slightly below to highlight the overall silhouette and graceful movement. The scene shifts to a close-up of the fabric, capturing its rich texture and sheen, before a gentle pan reveals the jacket's stylish fit and striking color details.",
+    "reference_image": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/Processed/o\u0308lto\u0308ny.png",
+    "output_video": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/generated_videos/o\u0308lto\u0308ny_video.mp4",
     "status": "success"
   }
 }
