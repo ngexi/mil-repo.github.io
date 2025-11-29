@@ -1,8 +1,8 @@
 {
-  "feher_ruha": {
-    "prompt": "A full body shot of a fitted, knee-length white cotton dress, with the camera slowly pushing in from slightly below to highlight the graceful silhouette and gentle movement of the fabric. The scene then shifts to a close-up, capturing the elegant texture of the cotton, before transitioning to a waist-up view that gently pans left, emphasizing the flattering fit around the waist and the soft flow of the skirt.",
-    "reference_image": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/Processed/feher_ruha.png",
-    "output_video": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/generated_videos/feher_ruha_video.mp4",
+  "Alig_hasznalt_ferfi_oltony__728922726698960": {
+    "prompt": "A full body shot of a model wearing a long, light gray satin jacket, with the camera slowly pushing in from slightly below to highlight the sleek silhouette and graceful movement. The scene shifts to a close-up, capturing the exquisite texture and sheen of the fabric, before transitioning to a waist-up view that gently pans down to reveal the regular fit and elegant details of this formal piece.",
+    "reference_image": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/Processed/Alig_hasznalt_ferfi_oltony__728922726698960.jpg",
+    "output_video": "/content/gdrive/MyDrive/_Adattudom\u00e1ny/MIL_beadand\u00f3/Images/generated_videos/Alig_hasznalt_ferfi_oltony__728922726698960_video.mp4",
     "status": "success"
   }
 }
